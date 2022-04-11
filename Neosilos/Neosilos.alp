@@ -826,191 +826,21 @@
 					</Points>
 				</Connector>
 			</Connectors>
-			<Schedules>
-				<Schedule>
-					<Id>1647455309506</Id>
-					<Name><![CDATA[CargaHoraria]]></Name>
-					<X>70</X><Y>470</Y>
+			<Connectivity>
+				<ExcelFile>
+					<Id>1649687064531</Id>
+					<Name><![CDATA[data]]></Name>
+					<X>20</X><Y>520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<ValueType>onOff</ValueType>
-					<UnitType><![CDATA[NONE]]></UnitType>
-					<UnitOfValue Class="RateUnits"><![CDATA[PER_HOUR]]></UnitOfValue>
-					<DefaultValue>true</DefaultValue>
-					<RepresentationMode>intervals</RepresentationMode>
-					<RepresentationType>week</RepresentationType>
-					<FirstDayOfWeek>sunday</FirstDayOfWeek>
-					<TimeUnitsInterval>hours</TimeUnitsInterval>
-					<RepeatTime>86400000</RepeatTime>
-					<RepeatTimeInterval>days</RepeatTimeInterval>
-					<IsSnapTo>true</IsSnapTo>
-					<SnapTo>0</SnapTo>
-					<SnapToTimeUnits>minutes</SnapToTimeUnits>
-					<AllDayExceptionMode>false</AllDayExceptionMode>
-					<LoadFromDatabase><![CDATA[false]]></LoadFromDatabase>
-					<IntervalsQuery>
-						<TableReference>
-						</TableReference>
-							<StartColumnReference>
-							</StartColumnReference>
-							<EndColumnReference>
-							</EndColumnReference>
-							<ValueColumnReference>
-							</ValueColumnReference>
-					</IntervalsQuery>
-					<Intervals>
-						<Interval>
-							<Start>25200000</Start>
-							<End>43200000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>111600000</Start>
-							<End>129600000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>198000000</Start>
-							<End>216000000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>284400000</Start>
-							<End>302400000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>370800000</Start>
-							<End>388800000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>43200000</Start>
-							<End>46800000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>129600000</Start>
-							<End>133200000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>216000000</Start>
-							<End>219600000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>302400000</Start>
-							<End>306000000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>388800000</Start>
-							<End>392400000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>46800000</Start>
-							<End>61200000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>133200000</Start>
-							<End>147600000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>219600000</Start>
-							<End>234000000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>306000000</Start>
-							<End>320400000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>392400000</Start>
-							<End>406800000</End>
-							<Value>true</Value>
-						</Interval>
-						<Interval>
-							<Start>432000000</Start>
-							<End>518400000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>518400000</Start>
-							<End>604800000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>0</Start>
-							<End>25200000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>86400000</Start>
-							<End>111600000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>172800000</Start>
-							<End>198000000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>259200000</Start>
-							<End>284400000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>345600000</Start>
-							<End>370800000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>432000000</Start>
-							<End>457200000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>61200000</Start>
-							<End>86400000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>147600000</Start>
-							<End>172800000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>234000000</Start>
-							<End>259200000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>320400000</Start>
-							<End>345600000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>406800000</Start>
-							<End>432000000</End>
-							<Value>false</Value>
-						</Interval>
-						<Interval>
-							<Start>493200000</Start>
-							<End>518400000</End>
-							<Value>false</Value>
-						</Interval>
-					</Intervals>
-					<Exceptions>
-					</Exceptions>
-				</Schedule>
-			</Schedules>
+					<FileName><![CDATA[ChegadaCaminhoesCocamar.xlsx]]></FileName>
+					<SaveInSnapshot>false</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1646857181046</Id>
@@ -1056,6 +886,9 @@
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[arrivalType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.DATABASE_ARRIVAL_TABLE]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
@@ -1083,6 +916,18 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[arrivalDate]]></Name>
+							<Value Class="DatabaseQueryCodeValue">
+								<Type>SELECT_UNIQUE_VALUE</Type>
+								<TableReference>
+								</TableReference>
+								<Condition>
+									<ColumnReference>
+									</ColumnReference>
+									<Operator>EQUALS</Operator>
+								</Condition>
+								<ColumnReference>
+								</ColumnReference>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[multipleEntitiesPerArrival]]></Name>
@@ -5207,7 +5052,6 @@
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[Coisas que faltam: 
-- Interligar o schedule com o classificador
 - Adicionar os gráficos com indicadores
 
 Floresta -> 1 classificador
