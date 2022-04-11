@@ -833,12 +833,12 @@
 					<X>70</X><Y>470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<ValueType>double_</ValueType>
-					<UnitType><![CDATA[RATE]]></UnitType>
+					<ValueType>onOff</ValueType>
+					<UnitType><![CDATA[NONE]]></UnitType>
 					<UnitOfValue Class="RateUnits"><![CDATA[PER_HOUR]]></UnitOfValue>
-					<DefaultValue>7.0</DefaultValue>
+					<DefaultValue>true</DefaultValue>
 					<RepresentationMode>intervals</RepresentationMode>
 					<RepresentationType>week</RepresentationType>
 					<FirstDayOfWeek>sunday</FirstDayOfWeek>
@@ -861,6 +861,151 @@
 							</ValueColumnReference>
 					</IntervalsQuery>
 					<Intervals>
+						<Interval>
+							<Start>25200000</Start>
+							<End>43200000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>111600000</Start>
+							<End>129600000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>198000000</Start>
+							<End>216000000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>284400000</Start>
+							<End>302400000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>370800000</Start>
+							<End>388800000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>43200000</Start>
+							<End>46800000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>129600000</Start>
+							<End>133200000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>216000000</Start>
+							<End>219600000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>302400000</Start>
+							<End>306000000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>388800000</Start>
+							<End>392400000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>46800000</Start>
+							<End>61200000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>133200000</Start>
+							<End>147600000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>219600000</Start>
+							<End>234000000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>306000000</Start>
+							<End>320400000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>392400000</Start>
+							<End>406800000</End>
+							<Value>true</Value>
+						</Interval>
+						<Interval>
+							<Start>432000000</Start>
+							<End>518400000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>518400000</Start>
+							<End>604800000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>0</Start>
+							<End>25200000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>86400000</Start>
+							<End>111600000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>172800000</Start>
+							<End>198000000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>259200000</Start>
+							<End>284400000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>345600000</Start>
+							<End>370800000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>432000000</Start>
+							<End>457200000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>61200000</Start>
+							<End>86400000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>147600000</Start>
+							<End>172800000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>234000000</Start>
+							<End>259200000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>320400000</Start>
+							<End>345600000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>406800000</Start>
+							<End>432000000</End>
+							<Value>false</Value>
+						</Interval>
+						<Interval>
+							<Start>493200000</Start>
+							<End>518400000</End>
+							<Value>false</Value>
+						</Interval>
 					</Intervals>
 					<Exceptions>
 					</Exceptions>
@@ -5061,10 +5206,8 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Coisas que faltam:
-- Problema na maquina de umidade 
-- Conseguir definir o tempo do service 
-- Arrumar o Schedule 
+					<Text><![CDATA[Coisas que faltam: 
+- Interligar o schedule com o classificador
 - Adicionar os gráficos com indicadores
 
 Floresta -> 1 classificador
