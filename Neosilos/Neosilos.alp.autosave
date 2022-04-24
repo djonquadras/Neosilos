@@ -6579,5 +6579,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 		<VersionMinor>2</VersionMinor>
 		<VersionBuild>0</VersionBuild>
     </RequiredLibraryReference>
+	<CloudModelUuid><![CDATA[8785ed1c-2192-4a26-93dc-45559928db80]]></CloudModelUuid>
 </Model>
 </AnyLogicWorkspace>
