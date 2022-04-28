@@ -937,6 +937,8 @@ int row = (resultados.getLastRowNum(1)+1);
 resultados.setCellValue(classificadores, 1, row, 1);
 resultados.setCellValue(tempoMaquina, 1, row, 2);
 resultados.setCellValue(equipamentos, 1, row, 3);
+resultados.setCellValue(dataChegada, 1, row, 4);
+resultados.setCellValue(tempoFila, 1, row, 6);
 
 
 ]]></Body>
@@ -1337,6 +1339,8 @@ if(caminhoesAtendidos <= classificadores){
 
 variavelTemp++;
 exportaResultados(agent.dataChegada);
+double tempoFila;
+tempoFila = tempoCalagem(agent);
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -4352,7 +4356,7 @@ getExperimentHost().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Desenvolvido por Djonathan Quadras, Luana Lingnau e Bruna Riggon, em parceria entre o
+					<Text><![CDATA[Desenvolvido por Djonathan Quadras, Luana Lingnau e Bruna Rigon, em parceria entre o
 Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC) e a Neosilos.
 ]]></Text>
 					<Font>
