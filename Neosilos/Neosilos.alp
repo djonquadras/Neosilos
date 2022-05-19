@@ -4680,9 +4680,6 @@ if(caminhoesAtendidos >= classificadores){
 						<TextColor/>
 						<Enabled>true</Enabled>
 						<ActionCode><![CDATA[deleteFrom(resultados)    
-     .execute();
-     
-deleteFrom(chegadas)    
      .execute();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
