@@ -128,6 +128,21 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1652457973898</Id>
+					<Name><![CDATA[amostrasAnalisadas]]></Name>
+					<X>20</X><Y>480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1650545555151</Id>
 					<Name><![CDATA[classificadores]]></Name>
@@ -141,7 +156,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[5]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1650545555149</Id>
@@ -156,7 +171,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 					<Id>1650546132537</Id>
 					<Name><![CDATA[equipamentos]]></Name>
 					<X>20</X><Y>330</Y>
-					<Label><X>-5</X><Y>0</Y></Label>
+					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -165,7 +180,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[0]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1650546132535</Id>
@@ -189,7 +204,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2]]></Code>
+							<Code><![CDATA[1]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1650546202674</Id>
@@ -213,7 +228,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
+							<Code><![CDATA[1]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1651576437291</Id>
@@ -224,45 +239,60 @@ int tempoFila = 0;]]></AdditionalClassCode>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1652458176634</Id>
+					<Name><![CDATA[usaMaquina]]></Name>
+					<X>20</X><Y>370</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[boolean]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[true]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1652458176632</Id>
+							<EditorContolType>CHECK_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1652473536896</Id>
+					<Name><![CDATA[operadorOcioso]]></Name>
+					<X>20</X><Y>310</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1652473536894</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Connectors>
 				<Connector>
-					<Id>1650545193521</Id>
-					<Name><![CDATA[connector2]]></Name>
-					<X>430</X><Y>160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[neosilos]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[amostras]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[neosilos]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[split1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Split]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1650545193525</Id>
 					<Name><![CDATA[connector16]]></Name>
-					<X>595</X><Y>160</Y>
+					<X>685</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -295,7 +325,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193527</Id>
 					<Name><![CDATA[connector12]]></Name>
-					<X>470</X><Y>160</Y>
+					<X>560</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -328,7 +358,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193529</Id>
 					<Name><![CDATA[connector13]]></Name>
-					<X>530</X><Y>160</Y>
+					<X>620</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -526,7 +556,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193541</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>470</X><Y>180</Y>
+					<X>560</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -560,7 +590,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193543</Id>
 					<Name><![CDATA[connector15]]></Name>
-					<X>530</X><Y>220</Y>
+					<X>620</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -593,7 +623,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193545</Id>
 					<Name><![CDATA[connector26]]></Name>
-					<X>650</X><Y>220</Y>
+					<X>740</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -627,7 +657,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193547</Id>
 					<Name><![CDATA[connector14]]></Name>
-					<X>570</X><Y>220</Y>
+					<X>660</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -660,7 +690,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650545193549</Id>
 					<Name><![CDATA[connector25]]></Name>
-					<X>610</X><Y>220</Y>
+					<X>700</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -693,7 +723,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1650547638230</Id>
 					<Name><![CDATA[connector6]]></Name>
-					<X>710</X><Y>160</Y>
+					<X>800</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -760,7 +790,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1651180421037</Id>
 					<Name><![CDATA[connector17]]></Name>
-					<X>750</X><Y>160</Y>
+					<X>840</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -859,7 +889,7 @@ int tempoFila = 0;]]></AdditionalClassCode>
 				<Connector>
 					<Id>1651239445942</Id>
 					<Name><![CDATA[connector19]]></Name>
-					<X>820</X><Y>160</Y>
+					<X>910</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -887,6 +917,72 @@ int tempoFila = 0;]]></AdditionalClassCode>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-30</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1652457888720</Id>
+					<Name><![CDATA[connector]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[neosilos]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[amostras]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[neosilos]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>430</X><Y>160</Y></Point>
+						<Point><X>480</X><Y>160</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1652457888722</Id>
+					<Name><![CDATA[connector2]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[neosilos]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[neosilos]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[split1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Split]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>500</X><Y>160</Y></Point>
+						<Point><X>540</X><Y>160</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -923,31 +1019,36 @@ return tempoCalagem;]]></Body>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if(equipamentos == 0){
+					<Parameter>
+						<Name><![CDATA[emProcesso]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Body><![CDATA[if(!usaMaquina){
 	if(cortaOsGraos == 0){
 		return 195;
 	} else {
 		return 615;
 	}
-} else {	
-	return tempoMaquina*60;
+}
+else {
+	if(equipamentos < classificadores){
+		if(emProcesso > equipamentos){
+			if(cortaOsGraos == 0){
+				return 195;
+			}
+			else {
+				return 615;
+			}
+		}
+		else{
+			return tempoMaquina*60;
+		}
+	} 
+	else {
+		return tempoMaquina*60;
+		
+	}		
 }]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[int]]></ReturnType>
-					<Id>1650546535680</Id>
-					<Name><![CDATA[capacidade]]></Name>
-					<X>230</X><Y>420</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if(equipamentos == 0){
-	return classificadores;
-} else {
-	return equipamentos;}
-]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
@@ -963,49 +1064,68 @@ return tempoCalagem;]]></Body>
 						<Name><![CDATA[caminhao]]></Name>
 						<Type><![CDATA[caminhao]]></Type>
 					</Parameter>
-					<Body><![CDATA[resultados.writeFile();
-int row = (resultados.getLastRowNum(1)+1);
+					<Body><![CDATA[caminhao.dataSaida = addToDate(caminhao.dataChegada, MINUTE, (caminhao.esperaTotal + caminhao.TempoProcessamento));
+
+insertInto(resultados)
+     .columns(resultados.classificadores, resultados.operador_ocioso, resultados.tempo_maquinas, resultados.equipamentos, resultados.corta_os_graos, resultados.data_chegada, resultados.data_saida, resultados.tempo_fila, resultados.tempo_processamento)
+     .values(classificadores, operadorOcioso, tempoMaquina, equipamentos, cortaOsGraos, caminhao.dataChegada, caminhao.dataSaida, caminhao.esperaTotal, caminhao.TempoProcessamento)
+    .execute();
+
+
+
+
+
+
+
+
+//resultados.writeFile();
+//int row = (resultados.getLastRowNum(1)+1);
 // Numero de Classificadores
-resultados.setCellValue(classificadores, 1, row, 1);
+//resultados.setCellValue(classificadores, 1, row, 1);
 // Tempo Processamento Maquina Neosilos
-resultados.setCellValue(tempoMaquina, 1, row, 2);
+//resultados.setCellValue(tempoMaquina, 1, row, 2);
 // Quantidade de Equipamentos
-resultados.setCellValue(equipamentos, 1, row, 3);
+//resultados.setCellValue(equipamentos, 1, row, 3);
 // Corta Graos ao Meio
-resultados.setCellValue(cortaOsGraos, 1, row, 4);
+//resultados.setCellValue(cortaOsGraos, 1, row, 4);
 // Data da Chegada do Caminhao
-resultados.setCellValue(caminhao.dataChegada, 1, row, 5);
+//resultados.setCellValue(caminhao.dataChegada, 1, row, 5);
 // Data da Saida do Caminhao
-caminhao.dataSaida = addToDate(caminhao.dataChegada, MINUTE, (caminhao.esperaTotal + caminhao.TempoProcessamento));
-resultados.setCellValue(caminhao.dataSaida, 1, row, 6);
+//resultados.setCellValue(caminhao.dataSaida, 1, row, 6);
 // Tempo de fila do Caminhao
-resultados.setCellValue(caminhao.esperaTotal, 1, row, 7);
+//resultados.setCellValue(caminhao.esperaTotal, 1, row, 7);
 // Tempo de Processamento Total
-resultados.setCellValue(caminhao.TempoProcessamento, 1, row, 8);
+//resultados.setCellValue(caminhao.TempoProcessamento, 1, row, 8);
 
 
 
 ]]></Body>
 				</Function>
-			</Functions>
-			<Connectivity>
-				<ExcelFile>
-					<Id>1650991074010</Id>
-					<Name><![CDATA[resultados]]></Name>
-					<X>20</X><Y>20</Y>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[int]]></ReturnType>
+					<Id>1652473501910</Id>
+					<Name><![CDATA[capacidadeClassificacao]]></Name>
+					<X>230</X><Y>430</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<ResourceReference>
-						<PackageName><![CDATA[neosilos]]></PackageName>
-						<ClassName><![CDATA[planilhas/resultados.xlsx]]></ClassName>
-					</ResourceReference>
-					<SaveInSnapshot>true</SaveInSnapshot>
-					<LoadOnStartup>true</LoadOnStartup>
-					<SaveOnDispose>true</SaveOnDispose>
-				</ExcelFile>
-			</Connectivity>
+					<Body><![CDATA[if(equipamentos < classificadores){
+	if(operadorOcioso == 1){
+		return equipamentos;
+	}
+	else{
+		return classificadores;
+	}
+} 
+else {
+	return classificadores;
+	
+}		
+]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1646857181046</Id>
@@ -1352,7 +1472,7 @@ resultados.setCellValue(caminhao.TempoProcessamento, 1, row, 8);
 				<EmbeddedObject>
 					<Id>1650545193392</Id>
 					<Name><![CDATA[saida]]></Name>
-					<X>820</X><Y>150</Y>
+					<X>910</X><Y>150</Y>
 					<Label><X>-10</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1535,7 +1655,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193413</Id>
 					<Name><![CDATA[split1]]></Name>
-					<X>450</X><Y>150</Y>
+					<X>540</X><Y>150</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1880,7 +2000,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193439</Id>
 					<Name><![CDATA[combine]]></Name>
-					<X>660</X><Y>150</Y>
+					<X>750</X><Y>150</Y>
 					<Label><X>-20</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2046,6 +2166,10 @@ exportaResultados(agent);
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[amostrasAnalisadas--;
+hold1.unblock();]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2090,7 +2214,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193448</Id>
 					<Name><![CDATA[impurezas]]></Name>
-					<X>555</X><Y>140</Y>
+					<X>645</X><Y>140</Y>
 					<Label><X>-22</X><Y>-8</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2193,7 +2317,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193454</Id>
 					<Name><![CDATA[queue2]]></Name>
-					<X>490</X><Y>140</Y>
+					<X>580</X><Y>140</Y>
 					<Label><X>-10</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2652,7 +2776,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193486</Id>
 					<Name><![CDATA[umidade]]></Name>
-					<X>530</X><Y>200</Y>
+					<X>620</X><Y>200</Y>
 					<Label><X>-18</X><Y>-6</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2755,7 +2879,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193494</Id>
 					<Name><![CDATA[queue6]]></Name>
-					<X>490</X><Y>200</Y>
+					<X>580</X><Y>200</Y>
 					<Label><X>-10</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2869,7 +2993,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193505</Id>
 					<Name><![CDATA[classificacao]]></Name>
-					<X>610</X><Y>200</Y>
+					<X>700</X><Y>200</Y>
 					<Label><X>-36</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2892,14 +3016,14 @@ exportaResultados(agent);
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[tempoClassificacao()]]></Code>
+								<Code><![CDATA[tempoClassificacao(self.size())]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[classificadores;]]></Code>
+								<Code><![CDATA[capacidadeClassificacao();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2972,7 +3096,7 @@ exportaResultados(agent);
 				<EmbeddedObject>
 					<Id>1650545193515</Id>
 					<Name><![CDATA[queue7]]></Name>
-					<X>570</X><Y>200</Y>
+					<X>660</X><Y>200</Y>
 					<Label><X>-10</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3293,7 +3417,7 @@ if(caminhoesAtendidos >= classificadores){
 				<EmbeddedObject>
 					<Id>1650547636492</Id>
 					<Name><![CDATA[queue]]></Name>
-					<X>710</X><Y>140</Y>
+					<X>800</X><Y>140</Y>
 					<Label><X>-10</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3407,7 +3531,7 @@ if(caminhoesAtendidos >= classificadores){
 				<EmbeddedObject>
 					<Id>1650547646431</Id>
 					<Name><![CDATA[relatorio]]></Name>
-					<X>750</X><Y>140</Y>
+					<X>840</X><Y>140</Y>
 					<Label><X>-20</X><Y>-5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3466,6 +3590,90 @@ if(caminhoesAtendidos >= classificadores){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1652457884611</Id>
+					<Name><![CDATA[hold1]]></Name>
+					<X>480</X><Y>150</Y>
+					<Label><X>-15</X><Y>-25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[if(usaMaquina){
+	amostrasAnalisadas++;
+	if(amostrasAnalisadas >= equipamentos){
+		self.block();
+	}
+}
+]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -4323,6 +4531,171 @@ if(caminhoesAtendidos >= classificadores){
 			</Presentation>
 
 		</ActiveObjectClass>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1652967167446</Id>
+			<Name><![CDATA[deletarDatabase]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1652967167444</Id>
+				<Name><![CDATA[1652967167444]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<SceneSkybox>null</SceneSkybox>
+			<AgentProperties>
+	 			<SpaceType>CONTINUOUS</SpaceType>			
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+				<PhysicalLength Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalLength>
+				<PhysicalWidth Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalWidth>
+				<PhysicalHeight Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalHeight>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1653033600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1652967167442</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<CurrentLevel>1652967167445</CurrentLevel>
+			<ConnectionsId>1652967167441</ConnectionsId>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1652967167441</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+			<Presentation>
+				<Level>
+					<Id>1652967167445</Id>
+					<Name><![CDATA[level]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+
+			<Presentation>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1652967204539</Id>
+					<Name><![CDATA[button]]></Name>
+					<X>40</X><Y>60</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="100" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[deleteFrom(resultados)    
+     .execute();
+     
+deleteFrom(chegadas)    
+     .execute();]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[button]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+			</Presentation>
+
+				</Level>
+			</Presentation>
+
+		</ActiveObjectClass>
 	</ActiveObjectClasses>	
 	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
 	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
@@ -4337,7 +4710,7 @@ if(caminhoesAtendidos >= classificadores){
 	</Frame>
 	<Database>
 		<Logging>false</Logging>
-		<AutoExport>false</AutoExport>
+		<AutoExport>true</AutoExport>
 		<ShutdownCompact>false</ShutdownCompact>
 		<ImportSettings>
 			<ExternalConnection>
@@ -4372,6 +4745,14 @@ if(caminhoesAtendidos >= classificadores){
 			</TableImportSettings>
 		</ImportSettings>
 		<ExportSettings>
+			<ExportExcelResourceReference>
+				<PackageName><![CDATA[neosilos]]></PackageName>
+				<ClassName><![CDATA[planilhas/resultadosDatabase.xlsx]]></ClassName>
+			</ExportExcelResourceReference>
+			<TableReference>
+				<PackageName><![CDATA[neosilos]]></PackageName>
+				<ClassName><![CDATA[resultados]]></ClassName>
+			</TableReference>
 		</ExportSettings>
 	</Database>
 	
@@ -4566,6 +4947,12 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 				<Parameter>
 					<ParameterName><![CDATA[cortaOsGraos]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[usaMaquina]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[operadorOcioso]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
@@ -4574,6 +4961,62 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
 				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
 				<RealTimeScale>500.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified date]]></StopOption>
+				<InitialDate><![CDATA[1546387200000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1651363200000]]></FinalDate>	
+				<FinalTime><![CDATA[1749600.0]]></FinalTime>	
+			</ModelTimeProperties>
+		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1652967167446">
+			<Id>1652967186979</Id>
+			<Name><![CDATA[deletar]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>0</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Neosilos]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>			
+			</Parameters>			
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[Neosilos : Simulation1]]></Title>	
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Stop at specified date]]></StopOption>
@@ -4928,6 +5371,116 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 					</Font>
 					<Alignment>RIGHT</Alignment>
 				</Text>
+				<Text>
+					<Id>0</Id>
+					<Name><![CDATA[text12]]></Name>
+					<X>50</X><Y>270</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[usaMaquina]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>0</Id>
+					<Name><![CDATA[text13]]></Name>
+					<X>240</X><Y>270</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( usaMaquina )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>0</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>40</X><Y>290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>30</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>0</Id>
+					<Name><![CDATA[text14]]></Name>
+					<X>50</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[operadorOcioso]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>0</Id>
+					<Name><![CDATA[text15]]></Name>
+					<X>240</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( operadorOcioso )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
 			</Presentation>
 
 			<AllowParallelEvaluations>true</AllowParallelEvaluations>
@@ -4945,17 +5498,44 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 			<FreeformParamValue>	
 				<Id>1651576437293</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1652458176634</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1652473536896</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1650545555151</Id>
 				<Type>FIXED</Type>
+				<From Class="CodeValue">
+					<Code><![CDATA[1]]></Code>
+				</From>
+				<To Class="CodeValue">
+					<Code><![CDATA[5]]></Code>
+				</To>
+				<Step Class="CodeValue">
+					<Code><![CDATA[2]]></Code>
+				</Step>
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1650546132537</Id>
-				<Type>FIXED</Type>
+				<Type>RANGE</Type>
+				<Expression Class="CodeValue">
+					<Code><![CDATA[1]]></Code>
+				</Expression>
+				<From Class="CodeValue">
+					<Code><![CDATA[1]]></Code>
+				</From>
+				<To Class="CodeValue">
+					<Code><![CDATA[5]]></Code>
+				</To>
+				<Step Class="CodeValue">
+					<Code><![CDATA[2]]></Code>
+				</Step>
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1650546202676</Id>
-				<Type>FIXED</Type>
+				<Type>RANGE</Type>
 				<From Class="CodeValue">
 					<Code><![CDATA[1]]></Code>
 				</From>
@@ -4968,7 +5548,27 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1651576437293</Id>
+				<Type>RANGE</Type>
+				<From Class="CodeValue">
+					<Code><![CDATA[0]]></Code>
+				</From>
+				<To Class="CodeValue">
+					<Code><![CDATA[1]]></Code>
+				</To>
+				<Step Class="CodeValue">
+					<Code><![CDATA[1]]></Code>
+				</Step>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1652458176634</Id>
 				<Type>FIXED</Type>
+				<Expression Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Expression>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1652473536896</Id>
+				<Type>RANGE</Type>
 				<From Class="CodeValue">
 					<Code><![CDATA[0]]></Code>
 				</From>
@@ -4981,10 +5581,10 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Stop at specified date]]></StopOption>
-				<InitialDate><![CDATA[1546387200000]]></InitialDate>	
+				<InitialDate><![CDATA[1640995200000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1646697600000]]></FinalDate>	
-				<FinalTime><![CDATA[1671840.0]]></FinalTime>	
+				<FinalDate><![CDATA[1672531199000]]></FinalDate>	
+				<FinalTime><![CDATA[525599.9833333333]]></FinalTime>	
 			</ModelTimeProperties>
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
@@ -5018,7 +5618,7 @@ Laboratório de Sistemas Produtivos e Logísticos Inteligentes (ProLogIS - UFSC)
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 		<Resource>
-			<Path><![CDATA[planilhas/resultados.xlsx]]></Path>
+			<Path><![CDATA[planilhas/resultadosDatabase.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 	</ModelResources>
