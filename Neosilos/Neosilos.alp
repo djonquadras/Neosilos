@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.5.2.202001241844" AlpVersion="8.5.1">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.5.2.202001241833" AlpVersion="8.5.1">
 <Model>
 	<Id>1646857181045</Id>
 	<Name><![CDATA[Neosilos]]></Name>
@@ -3638,7 +3638,7 @@ if(caminhoesAtendidos >= classificadores){
 					<Label><X>-15</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
 						<ClassName><![CDATA[Hold]]></ClassName>
